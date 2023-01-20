@@ -7,6 +7,22 @@
     <title>ToDo List</title>
 </head>
 <body>
-    <h1>ToDo start</h1>
+    <h1>ToDo start at <%= kindofDay %> </h1>
+
+    <ul>
+        <li>rice </li>
+        <li>beans </li>
+        <li>bread </li>
+        
+        <% for(let item of newListItems){%>
+            <li><%= item %> </li>
+        <% } %> 
+    </ul>
+
+    <form class="" action="/" method="post">
+        <input type="text" name="newItem">
+        <button type="submit" name="button">Add</button>
+    </form>
+
 </body>
 </html>
