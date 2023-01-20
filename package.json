@@ -5,7 +5,7 @@
   "repository": "git@github.com:Nixhazel/Todo-list-app-using-EJS-and-Express.git",
   "author": "Emmanuel <38895255+Nixhazel@users.noreply.github.com>",
   "license": "MIT",
-  "type": "module",
+
     "scripts": {
     "start": "nodemon ./app"
   },
