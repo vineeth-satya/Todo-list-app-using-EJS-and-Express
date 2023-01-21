@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="box" id="heading">
-			<h1><%= kindofDay %></h1>
+			<h1><%= listtitle %></h1>
 		</div>
 		<div class="box">
 			<% for(let item of newListItems){%>
@@ -20,7 +20,7 @@
 			<% } %>
             <form class="item" action="/" method="post">
 			<input type="text" name="newItem"  placeholder="New Item" autocomplete="off"/>
-			<button type="submit" name="button">+</button>
+			<button type="submit" name="list" value = <%= listtitle %> >+</button>
 		</form>
         </div>
 
