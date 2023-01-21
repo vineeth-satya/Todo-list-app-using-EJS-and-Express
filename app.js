@@ -49,6 +49,10 @@ app.post("/work", (req, res)=>{
 
 });
 
+app.get("/about", (req, res) => {
+	res.render("about page");
+})
+
 app.listen(3000, function () {
 	console.log("Server started on port 3000.");
 });
