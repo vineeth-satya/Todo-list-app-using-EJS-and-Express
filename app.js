@@ -3,20 +3,20 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-let items = [];
-let workitems = [];
+const items = [];
+const workitems = [];
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
-	let today = new Date();
+	const today = new Date();
 	const options = {
 		weekday: "long",
 		day: "numeric",
 		month: "long"
 	};
-	let day = today.toLocaleDateString("en-US", options)
+	const day = today.toLocaleDateString("en-US", options)
 
 	res.render("list", {
 		listtitle: day,
@@ -25,7 +25,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", (req, res) => {
-	let item = req.body.newItem;
+	const item = req.body.newItem;
 	if (req.body.list === "Work") {
 		workitems.push(item);
 		res.redirect("/work");
@@ -41,12 +41,10 @@ app.get("/work", (req,res)=>{
 		newListItems: workitems
 	});
 });
-
 app.post("/work", (req, res)=>{
-	let item = req.body.newItem;
+	const item = req.body.newItem;
 	workitems.push(item);
 	res.redirect("/work");
-
 });
 
 app.get("/about", (req, res) => {
