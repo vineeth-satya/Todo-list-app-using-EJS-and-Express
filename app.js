@@ -16,7 +16,7 @@ app.get("/", function (req, res) {
 		day: "numeric",
 		month: "long"
 	};
-	const day = today.toLocaleDateString("en-US", options)
+	const day = today.toLocaleDateString("en-US", options);
 
 	res.render("list", {
 		listtitle: day,
@@ -49,7 +49,7 @@ app.post("/work", (req, res)=>{
 
 app.get("/about", (req, res) => {
 	res.render("about page");
-})
+});
 
 app.listen(3000, function () {
 	console.log("Server started on port 3000.");
