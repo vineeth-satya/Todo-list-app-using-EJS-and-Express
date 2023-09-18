@@ -9,4 +9,4 @@ Next, run the command "npm install" to install the necessary dependencies. Once 
 
 The app also uses EJS to render the views, allowing you to easily customize the layout and design of the app to suit your needs.<br>
 
-We hope you find this app useful and we welcome any feedback or suggestions. Please feel free to submit any issues or pull requests on the GitHub repository.
+We hope you find this app useful and we welcome any feedback or suggestions. Please feel free to submit any issues or pull requests on the GitHub repository.# Todo-list

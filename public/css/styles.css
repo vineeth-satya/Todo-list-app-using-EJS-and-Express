@@ -1,6 +1,6 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-image: url("https://plus.unsplash.com/premium_photo-1683309563562-aa3cfde9ed10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -9,18 +9,31 @@ h1 {
   color: #fff;
   padding: 10px;
 }
+.switching{
+  padding: 10px;
+  display: flex;
+  justify-content:space-around
+}
+.today{
+  display: flex;
+  
+}
+.work{
+  display: flex;
+}
 
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: white;
+  background: black;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color:black;
   text-align: center;
+  border-radius: 40%;
 }
 
 .item {
@@ -48,7 +61,7 @@ p {
   padding: 20px;
   font-size: 20px;
   font-weight: 200;
-  color: #00204a;
+  color: white;
 }
 
 form {
@@ -61,11 +74,12 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  background-color: black;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -73,6 +87,7 @@ input[type="text"] {
   height: 60px;
   top: 10px;
   border: none;
+  color: #fff;
   background: transparent;
   font-size: 20px;
   font-weight: 200;
